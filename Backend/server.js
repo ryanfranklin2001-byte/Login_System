@@ -5,6 +5,7 @@ const path = require('path')
 const authRoutes = require("./routes/auth");
 
 const app = express();
+const PORT = 3001
 
 app.use(cors());
 app.use(express.json());
@@ -17,6 +18,6 @@ app.get('/', (req,res)=>{
 
 app.use("/api", authRoutes);
 
-app.listen(3000, () => {
-    console.log("Servidor rodando em http://localhost:3000");
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em http://localhost:${PORT}`)
 });
