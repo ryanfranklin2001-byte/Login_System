@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Login System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <div class="login-container">
+
         <h1>Login</h1>
+
         <p>Acesse sua conta</p>
-        <form>
+
+        <form id="loginForm">
+
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Digite seu email">
             </div>
-            
+
             <div class="input-group">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" placeholder="Digite sua senha">
             </div>
+
             <button type="submit">Entrar</button>
+
         </form>
 
         <div class="footer">
             <span>Não tem conta?</span>
+
             <a href="./register.html">Criar conta</a>
+
         </div>
+
     </div>
+
+
+    <script src="./js/login.js"></script>
+
 </body>
-</html>

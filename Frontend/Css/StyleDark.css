@@ -1,0 +1,139 @@
+/* ==========================
+   RESET BÁSICO
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* ==========================
+   FUNDO DA PÁGINA
+========================== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vampiro One", system-ui;
+}
+
+
+/* ==========================
+   CONTAINER PRINCIPAL
+========================== */
+.login-container {
+  background: rgba(20, 20, 20, 0.95);
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* ==========================
+   TÍTULO E TEXTO
+========================== */
+.login-container h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.login-container p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #bbbbbb;
+}
+
+/* ==========================
+   GRUPO DE INPUT
+========================== */
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #cccccc;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #1e1e1e;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.input-group input::placeholder {
+  color: #888888;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px #00c6ff;
+}
+
+/* ==========================
+   BOTÃO
+========================== */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #020617;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.5);
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.footer a {
+  margin-left: 5px;
+  color: #00c6ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #66d9ff;
+}
+
+
+
+
+/* ==========================
+   RESPONSIVO
+========================== */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+}

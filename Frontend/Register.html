@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Criar Conta - Login System</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Criar Conta</title>
+  <link rel="stylesheet" href="./css/style_register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="login-container">
-        <h1>Criar Conta</h1>
-        <p>Preencha os dados para se cadastrar no sistema</p>
-        
-        <form>
-            <div class="input-group">
-                <label for="nome">Nome completo</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Digite seu email" required>
-            </div>
-            <div class="input-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Crie uma senha" required>
-            </div>
-            <div class="input-group">
-                <label for="confirmar-senha">Confirmar senha</label>
-                <input type="password" id="confirmar-senha" placeholder="Repita a senha" required>
-            </div>
-            
-            <button type="submit">Cadastrar</button>
-        </form>
 
-        <div class="footer">
-            <span>Já possui conta?</span>
-            <a href="./index.html">Voltar para o login</a>
-        </div>
-    </div>
+
+<body>
+
+<main class="register-wrapper">
+
+  <!-- LADO ESQUERDO -->
+  <header class="register-info">
+    <h1>Criar Conta</h1>
+    <p>Preencha os dados para se cadastrar no sistema</p>
+
+    <span>Já possui conta?</span>
+    <a href="index.html">Voltar para o login</a>
+  </header>
+
+  <!-- LADO DIREITO -->
+  <section class="register-card">
+    <form id="registerForm">
+
+      <div class="input-group">
+        <label>Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="input-group">
+        <label>Senha</label>
+        <input type="password" id="senha" placeholder="Crie uma senha">
+      </div>
+
+      <div class="input-group">
+        <label>Confirmar senha</label>
+        <input type="password" id="confirmar" placeholder="Repita a senha">
+      </div>
+
+      <button type="submit">Cadastrar</button>
+
+    </form>
+  </section>
+
+</main>
+
+<script src="./js/register.js"></script>
 </body>
 </html>
