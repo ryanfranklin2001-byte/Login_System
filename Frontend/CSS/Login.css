@@ -137,3 +137,80 @@ button:hover {
     padding: 30px 20px;
   }
 }
+
+.theme-toggle-btn {
+position: absolute;
+width: 50px;
+height: 50px;
+top: 20px;
+right: 80px;
+margin-top: 0;
+padding: 10px;
+border-radius: 50%;
+font-size: 20px;
+background-color: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255,255,255,0.4);
+color: white;
+transition: 0.3s;
+z-index: 1000;
+}
+
+.theme-toggle-btn:hover {
+transform: scale(1.1);
+background: rgba(255, 255,255, 0.3);
+}
+
+body.light {
+background: linear-gradient(
+135deg,
+#e0f2fe,
+#bae6fd,
+#7dd3fc
+);
+}
+
+.login-container {
+background: rgba(20, 20, 20, 0.95);
+}
+
+body.light .login-container {
+background: #ffffff;
+box-shadow: 0 20px 40px rgba(0, 114, 255, 0.15);
+}
+
+body.light .login-container h1 {
+color: #0f172a;
+}
+
+body.light .login-container p {
+color: #475569;
+}
+
+body.light .input-group label {
+color: #334155;
+}
+
+body.light .input-group input {
+background: #f1f5f9;
+color: #0f172a;
+
+
+border: 1px solid #cbd5e1;
+}
+
+body.light .input-group input::placeholder {
+color: #94a3b8;
+}
+
+body.light .theme-toggle-btn {
+background-color: rgba(15, 23, 42, 0.1);
+border: 1px solid rgba(15, 23, 42, 0.2);
+color: #0f172a;
+}
+
+body.light .footer {
+color: #64748b;
+}
+body.light .footer a {
+color: #0072ff;
+}

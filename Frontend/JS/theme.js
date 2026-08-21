@@ -1,34 +1,36 @@
+/* ==================================
+GERENCIADOR DE TEMA GLOBAL
+================================== */
 function inicializarTema() {
-  const btnThemeToggle = document.querySelector(".theme-toggle-btn");
+  const btnThemeToggle =
+    document.querySelector(".theme-toggle-btn");
   const body = document.body;
-
-  // 1. Recupera o tema salvo no localStorage
+  // 1. Recupera o tema salvo
   const temaSalvo = localStorage.getItem("theme");
-
   if (temaSalvo === "light") {
     body.classList.add("light");
     if (btnThemeToggle) {
-      btnThemeToggle.textContent = "☀️"; // Ícone para o tema claro
+      btnThemeToggle.textContent = "🌙";
     }
   } else {
     body.classList.remove("light");
     if (btnThemeToggle) {
-      btnThemeToggle.textContent = "🌙"; // Ícone para o tema escuro
+      btnThemeToggle.textContent = "🌞";
     }
   }
-
-  // 2. Configura o evento de clique no botão
+  // 2. Configura o botão
   if (btnThemeToggle) {
     btnThemeToggle.addEventListener("click", () => {
       body.classList.toggle("light");
-
       if (body.classList.contains("light")) {
-        btnThemeToggle.textContent = "☀️";
+        btnThemeToggle.textContent = "🌙";
         localStorage.setItem("theme", "light");
       } else {
-        btnThemeToggle.textContent = "🌙";
+        btnThemeToggle.textContent = "🌞";
         localStorage.setItem("theme", "dark");
       }
     });
   }
 }
+// Executa a inicialização
+inicializarTema();
