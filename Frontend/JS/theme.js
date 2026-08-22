@@ -10,12 +10,12 @@ function inicializarTema() {
   if (temaSalvo === "light") {
     body.classList.add("light");
     if (btnThemeToggle) {
-      btnThemeToggle.textContent = "🌙";
+      btnThemeToggle.textContent = "Tema escuro";
     }
   } else {
     body.classList.remove("light");
     if (btnThemeToggle) {
-      btnThemeToggle.textContent = "🌞";
+      btnThemeToggle.textContent = "Tema claro";
     }
   }
   // 2. Configura o botão
@@ -23,10 +23,10 @@ function inicializarTema() {
     btnThemeToggle.addEventListener("click", () => {
       body.classList.toggle("light");
       if (body.classList.contains("light")) {
-        btnThemeToggle.textContent = "🌙";
+        btnThemeToggle.textContent = "Tema escuro";
         localStorage.setItem("theme", "light");
       } else {
-        btnThemeToggle.textContent = "🌞";
+        btnThemeToggle.textContent = "Tema claro";
         localStorage.setItem("theme", "dark");
       }
     });
